@@ -1,9 +1,9 @@
 *.class
 
 # Package Files #
-*.jar
 *.war
 *.ear
+*.zip
 
 # Idea specific ones
 .idea/workspace.xml

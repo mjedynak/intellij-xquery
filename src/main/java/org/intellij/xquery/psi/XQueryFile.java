@@ -80,4 +80,9 @@ public class XQueryFile extends PsiFileBase {
                 XQueryFunctionDecl.class);
         return functionDeclarations;
     }
+
+    public boolean isLibraryModule() {
+        XQueryModuleDecl moduleDecl = PsiTreeUtil.findChildOfType(this, XQueryModuleDecl.class);
+        return moduleDecl != null;
+    }
 }
